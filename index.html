@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="header">
+    <h1> Menu </h1>
+</div>
+<ul class="glx-menu"> Вивадить
+    <li class="elem" id="shops">Открыть все магазины</li>
+    <li class="elem" id='orders'> Открыть все заказы</li>
+    <li class="elem" id="routes">Открыть все маршуты</li>
+</ul>
+
+<div id="menu"></div>
+<div id="container"></div>
+
+
+
+<form action="" method="post" onsubmit="return false;" >
+    <div class="input-holder">
+        <label class="title" for="nameShop">Имя магазина</label>
+        <div class="input-field">
+            <input type="text" id="nameShop" name="nameShop">
+            <div id="nameShopErr" class="error"></div>
+        </div>
+    </div>
+    <div class="input-holder">
+        <label class="title" for="numberProduct">Номер продукта</label>
+        <div class="input-field">
+            <input type="text" id="numberProduct" name="numberProduct">
+            <div id="numberProductErr" class="error"></div>
+        </div>
+    </div>
+    <div class="input-holder">
+        <label class="title" for="productCount">Количества</label>
+        <div class="input-field">
+            <input type="text" id="productCount" name="productCount">
+            <div id="productCountErr" class="error"></div>
+        </div>
+    </div>
+
+    <div class="input-holder">
+        <label class="title" for="dateOrder">Дата</label>
+        <div class="input-field">
+            <input type="date" id="dateOrder" name="dateOrder">
+            <div id="dateOrderErr" class="error"></div>
+        </div>
+    </div>
+    <input type="text" class="hidden-input" id="spam">
+    <input type="submit" value="Отправить" id="submit">
+
+</form>
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

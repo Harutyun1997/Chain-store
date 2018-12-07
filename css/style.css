@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    color: red;
+    font-size: 20px;
+}
+
+.header {
+    background-color: #f9f9f9;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+
+.glx-menu {
+    font-family: 'PT Sans Caption', sans-serif;
+    list-style-type: none;
+    margin: 30px 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    color: grey;
+    transition: cubic-bezier(0.4, 0, 1, 1) 500ms;
+    margin: 10px;
+}
+
+.glx-menu:hover .elem {
+    transition: cubic-bezier(0.4, 0, 1, 1) 300ms;
+    display: block;
+}
+.elem{
+    display: none;
+    color: #fdfdfd;
+    background: #4eaae2;
+    width: 200px;
+    padding: 11px 8px;
+    text-decoration: none;
+    transition: cubic-bezier(0.4, 0, 1, 1) 300ms;
+}
+.elem:hover{
+    background:  blue;
+}
+#input{
+    padding: 6px;
+    background: #e4d8d89e;
+    position: relative;
+    left: 18px;
+    font-size: 16px;
+}
+#input2{
+    background: #efe7e6;
+    position:  relative;
+    left: 30px;
+    padding: 3px;
+    text-align: center;
+    font-size: 18px;
+}
+#label2{
+    position: relative;
+    left: 105px;
+}
+
+
+#close{
+    float: right;
+    color: #ffffff;
+    position: relative;
+    top: 15px;
+    border: 1px solid #170808;
+    padding: 10px;
+    background: #45af4a;
+    width: 91px;
+    right: -27px;
+    margin: 32px;
+}
+#close:hover {
+    background: #22ff29;
+}
+
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+    margin: 6px;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#menu {
+    top: 85px;
+    margin: 0;
+    color: #865555;
+    position: relative;
+    right: -8px;
+}
+#addElement{
+    color: red;
+}
+
+
+form {
+    position: relative;
+    top: 150px;
+    width: 475px;
+    border: 1px solid;
+    padding: 15px;
+    background-color: #fbfbfb;
+    border-radius: 6px;
+    margin: 30px auto;
+}
+
+.input-holder {
+    padding: 5px;
+    min-height: 45px;
+}
+
+.input-holder:after {
+    display: table;
+    clear: both;
+}
+
+
+.input-field {
+    float: right;
+    width: 67%;
+    height: 40px;
+}
+
+.input-field input {
+    width: 94%;
+}
+
+.hidden-input {
+    opacity: 0;
+    left: -9999px;
+    position: absolute;
+}
+
+#comment {
+    width: 73%;
+    height: 50px;
+    resize: none;
+    float: right;
+    margin-right: -5px;
+}
+
+#submit {
+    margin: 10px auto 0;
+    display: block;
+    width: 85px;
+    height: 30px;
+}
+
+.error {
+    color: red;
+}
